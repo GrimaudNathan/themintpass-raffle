@@ -1,7 +1,17 @@
 const holders = require('./holders.json');
 
 async function main() {
-  console.log(holders[1])
+  let winners = [];
+  for (let i = 0; i < 100; i++) {
+    while (true) {
+      let random = Math.floor(Math.random() * holders.length);
+      if (!winners.includes(holders[random])) {
+        winners.push(holders[random]);
+        break;
+      }
+    }
+  }
+  console.log(winners);
 }
 
 main()

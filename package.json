@@ -1,0 +1,11 @@
+{
+  "name": "themintpass-raffle",
+  "version": "1.0.0",
+  "main": "raffle.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrimaudNathan/themintpass-raffle.git"
+  },
+  "author": "@GrimaudNathan",
+  "license": "MIT"
+}
