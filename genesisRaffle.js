@@ -1,8 +1,8 @@
-const holders = require('./genesisRaffle.json');
+const holders = require('./genesisHolders.json');
 
 async function main() {
   let winners = [];
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 40; i++) {
     while (true) {
       let random = Math.floor(Math.random() * holders.length);
       if (!winners.includes(holders[random])) {
